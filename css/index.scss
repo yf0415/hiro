@@ -1,0 +1,245 @@
+@import url('common.css');
+
+main{
+    width:100%; height: 100%;
+    display:block;
+    article{
+        width:100%;
+        position: relative;
+        span{color:#b63727;}
+        .first{
+            position: absolute;
+            left:50%; top:50%;
+            transform: translate(-50%,48%);
+            .up{
+                width:100%;
+                text-align: right;
+                .up1{
+                    width:100%;
+    
+                    opacity: 0;
+                    transform-origin: bottom;
+                    animation:open4 .3s 1.5s linear forwards;
+                    @keyframes open4{
+                        0%{
+                            opacity: 0;
+                            transform: translateY(100px);
+                        }
+                        100%{
+                            opacity: 1;
+                            transform: translateY(90px);
+                        }
+                    }
+                    .kr{
+                        font-family: 'Nanum Gothic', sans-serif;
+                        font-weight: bold;
+                        font-size:2em;                    
+                    }
+                }
+                .up2{                
+                    opacity: 0;
+                    transform-origin: bottom;
+                    animation:open3 .3s 1.3s linear forwards;
+                    @keyframes open3{
+                        0%{
+                            opacity: 0;
+                            transform: translateY(100px);
+                        }
+                        100%{
+                            opacity: 1;
+                            transform: translateY(80px);
+                        }
+                    }
+                    .jpkt{
+                        font-family: 'Noto Sans JP', sans-serif;
+                        font-weight: bold;
+                        font-size:2em;
+                    }
+                }
+                .up3{
+                    opacity: 0;
+                    transform-origin: bottom;
+                    animation:open2 .3s 1s linear forwards;
+                    @keyframes open2{
+                        0%{
+                            opacity: 0;
+                            transform: translateY(100px);
+                        }
+                        100%{
+                            opacity: 1;
+                            transform: translateY(50px);
+                        }
+                    }
+                    .jphg{
+                        font-family: 'Noto Sans JP', sans-serif;
+                        font-weight: bold;
+                        font-size:4em;
+                    }
+                }
+            }
+            .mainfont{
+                opacity:0;
+                animation:open1 .8s linear forwards;
+                @keyframes open1{
+                    0%{opacity:0;}
+                    100%{opacity:1;}
+                }
+                p{
+                    font-family: 'Teko', sans-serif;
+                    font-weight: bold;
+                    font-size:8em;            
+                }
+            }
+            .down{
+                font-family: 'Nanum Gothic', sans-serif;
+                font-weight: bold;
+                font-size:2.2em;
+                
+                line-height: 1.2;
+                .down1{
+                    opacity: 0;
+                    transform-origin: top;
+                    animation:open5 .3s 1.4s linear forwards;
+                    @keyframes open5{
+                        0%{
+                            opacity: 0;
+                            transform: translateY(-100px);
+                        }
+                        100%{
+                            opacity: 1;
+                            transform: translateY(-50px);
+                        }
+                    }
+                }
+                .down2{
+                    opacity: 0;
+                    animation:open6 .3s 1.6s linear forwards;
+                    @keyframes open6{
+                        0%{
+                            opacity: 0;
+                        }
+                        100%{
+                            opacity: 1;
+                            transform: translateY(-50px);
+                        }
+                    }
+                }
+            }
+
+            animation:close .8s 2.8s linear forwards;
+                @keyframes close{
+                    100%{opacity:0;}
+                }
+
+        }
+        .second{
+            position: relative;
+            .logo{
+                position: absolute;
+                left:50%; top:50%;
+                transform-origin:-10% 50%;
+                opacity: 0;
+
+                animation:open8 .3s 4.4s linear forwards;
+                @keyframes open8{
+                    0%{
+                        opacity: .7;
+                    }
+                    35%{
+                        opacity:.9;
+                    }
+                    75%{
+                        opacity:.2;
+                    }
+                    100%{
+                        opacity: 1;
+                    }
+                }
+                img{
+                    transform: translate(-50%,70%);                    transition:.7s;
+                }
+            }
+            .mainfont2{
+                position: absolute;
+                left:50%; top:50%;
+                transform: translate(-50%,210%);
+
+                animation:open7 .5s 3.6s linear forwards;
+                @keyframes open7{
+                    100%{
+                        position: absolute;
+                        left:50%; top:50%;
+                        transform: translate(-50%,270%);
+                    }
+                }
+                p{
+                    font-family: 'Teko', sans-serif;
+                    font-weight: bold;
+                    font-size:8em;            
+                }
+            }
+        }
+    }
+}
+
+aside{
+    opacity: 0;
+    font-size:0;    
+    display:block;
+    text-align: center;
+    border-radius: 80%;
+    border:1px solid#fff;
+    background:#2e2e2e;
+    animation:jump .7s 5s linear infinite;
+    @keyframes jump{
+        0%{
+            opacity: .4;
+            width:10px; height:10px;
+            position: absolute;
+            left:50%; bottom:8%;            
+            transform:translate(-50%,-8%);
+        }
+        25%{
+            opacity: .8;
+            width:15px; height:18px;
+            position: absolute;
+            left:50%; bottom:4%;            
+            transform:translate(-50%,-4%);
+        }
+        45%{
+            opacity: 1;
+            width:22px; height:15px;
+            position: absolute;
+            left:50%; bottom:1%; 
+            transform:translate(-50%,-1%);
+        }
+        50%{
+            opacity: 1;
+            width:25px; height:10px;
+            position: absolute;
+            left:50%; bottom:0%; 
+            transform:translate(-50%,-0%);
+        }
+        55%{
+            opacity: 1;
+            width:22px; height:15px;
+            position: absolute;
+            left:50%; bottom:1%; 
+            transform:translate(-50%,-1%);
+        }
+        75%{
+            opacity: .8;
+            width:15px; height:18px;
+            position: absolute;
+            left:50%; bottom:4%;            
+            transform:translate(-50%,-4%);
+        }
+        100%{
+            opacity: .4;
+            width:10px; height:10px;
+            position: absolute;
+            left:50%; bottom:8%;            
+            transform:translate(-50%,-8%);
+        }
+    }
+}
