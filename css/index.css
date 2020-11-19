@@ -11,7 +11,8 @@ main article {
 }
 
 main article span {
-  color: #b63727;
+  font-family: 'Teko', sans-serif;
+  color: #598488;
 }
 
 main article .first {
@@ -65,7 +66,7 @@ main article .first .up .up1 {
 }
 
 main article .first .up .up1 .kr {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-weight: bold;
   font-size: 2em;
 }
@@ -110,6 +111,10 @@ main article .first .up .up2 .jpkt {
   font-size: 2em;
 }
 
+main article .first .up .up2 .jpkt span {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
 main article .first .up .up3 {
   opacity: 0;
   -webkit-transform-origin: bottom;
@@ -150,6 +155,10 @@ main article .first .up .up3 .jphg {
   font-size: 4em;
 }
 
+main article .first .up .up3 .jphg span {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
 main article .first .mainfont {
   opacity: 0;
   -webkit-animation: open1 .8s linear forwards;
@@ -181,7 +190,7 @@ main article .first .mainfont p {
 }
 
 main article .first .down {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-weight: bold;
   font-size: 2.2em;
   line-height: 1.2;
@@ -317,8 +326,8 @@ main article .second .mainfont2 {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, 210%);
-          transform: translate(-50%, 210%);
+  -webkit-transform: translate(-50%, 226%);
+          transform: translate(-50%, 226%);
   -webkit-animation: open7 .5s 3.6s linear forwards;
           animation: open7 .5s 3.6s linear forwards;
 }

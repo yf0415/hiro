@@ -6,7 +6,7 @@ main{
     article{
         width:100%;
         position: relative;
-        span{color:#b63727;}
+        span{font-family: 'Teko', sans-serif; color:#598488;}
         .first{
             position: absolute;
             left:50%; top:50%;
@@ -31,7 +31,7 @@ main{
                         }
                     }
                     .kr{
-                        font-family: 'Nanum Gothic', sans-serif;
+                        font-family: 'Noto Sans KR', sans-serif;
                         font-weight: bold;
                         font-size:2em;                    
                     }
@@ -54,6 +54,9 @@ main{
                         font-family: 'Noto Sans JP', sans-serif;
                         font-weight: bold;
                         font-size:2em;
+                        span{
+                            font-family: 'Noto Sans JP', sans-serif;
+                        }
                     }
                 }
                 .up3{
@@ -74,6 +77,9 @@ main{
                         font-family: 'Noto Sans JP', sans-serif;
                         font-weight: bold;
                         font-size:4em;
+                        span{
+                            font-family: 'Noto Sans JP', sans-serif;
+                        }
                     }
                 }
             }
@@ -91,7 +97,7 @@ main{
                 }
             }
             .down{
-                font-family: 'Nanum Gothic', sans-serif;
+                font-family: 'Noto Sans KR', sans-serif;
                 font-weight: bold;
                 font-size:2.2em;
                 
@@ -162,7 +168,7 @@ main{
             .mainfont2{
                 position: absolute;
                 left:50%; top:50%;
-                transform: translate(-50%,210%);
+                transform: translate(-50%,226%);                
 
                 animation:open7 .5s 3.6s linear forwards;
                 @keyframes open7{

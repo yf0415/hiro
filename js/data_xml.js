@@ -4,10 +4,10 @@ $(function(){
         type:'GET',
         success:function(data){
             
-            var imgSrc,imgSrc2,name,detail,story,language,mode,day,web,url1,url2,url3,url4,url5,url6,title1,title2,title3,title4,title5,title6,link1,link2,pdfView,webView;
+            var imgSrc,imgSrc2,logo,name,detail,story,mode,day,web,url1,url2,url3,url4,url5,url6,title1,title2,title3,title4,title5,title6,language1,language2,language3,language4,smalltalk,logo,num;
             
             function funList(code){
-                var mainHeader,mainstory,storymain,page1,page21,page22,page31,page32,type,btn1,btn2,btn3,btn4,btn5,btn6,pdfLink,webLink = ''
+                var mainHeader,mainstory,storymain,storypage,modepage,daypage,webpage,type,btn1,btn2,btn3,btn4,btn5,btn6,dango1,project = ''
 
                 $(data).find('item').each(function(i){
                     
@@ -16,15 +16,17 @@ $(function(){
                     name = $(this).find('name').text();
                     detail = $(this).find('detail').text();
                     story = $(this).find('story').text();
-                    language = $(this).find('language').text();
                     mode = $(this).find('mode').text();
                     day = $(this).find('day').text();
                     web = $(this).find('web').text();
 
-                    link1 = $(this).find('link1').text();
-                    link2 = $(this).find('link2').text();
-                    pdfView = $(this).find('pdfView').text();
-                    webView = $(this).find('webView').text();
+                    language1 = $(this).find('language1').text();
+                    language2 = $(this).find('language2').text();
+                    language3 = $(this).find('language3').text();
+                    language4 = $(this).find('language4').text();
+                    smalltalk = $(this).find('smalltalk').text();
+                    num = $(this).find('num').text();
+                    logo = $(this).find('logo').text();
 
                     url1 = $(this).find('url1').text();
                     url2 = $(this).find('url2').text();
@@ -39,69 +41,54 @@ $(function(){
                     title5 = $(this).find('title5').text();
                     title6 = $(this).find('title6').text();
 
-
                     type = $(this).find('type').text();
-                    
-                    if( code == type){
-                        mainstory = "<img id='png2' src='"+imgSrc+"' alt=''>";  
-                        mainstory += "<img id='gif2' src='"+imgSrc2+"' alt=''>";  
+
+
+                    //mainpage
+                    project = "<li><div class='listnum'>";
+                    project += "<h5>"+num+"</h5></div>";
+                    project += "<div class='logoimg'>";
+                    project += "<img src='"+logo+"' alt=''></div>";
+                    project += "<div class='smalllist'>";
+                    project += "<h2>"+name+"</h2>";
+                    project += "<p>"+smalltalk+"</p>";
+                    project += "</div></li>";
+
+                    $('main .projectlist').append(project);
+
+                    console.log('a');
+
+                    //subpage
+                    // if( code == type){
+                    //     mainstory = "<img id='png2' src='"+imgSrc+"' alt=''>";  
+                    //     mainstory += "<img id='gif2' src='"+imgSrc2+"' alt=''>";  
                         
-                        
-                        mainHeader = "<h1>"+name+"</h1>";
-                        storymain =  "<p>"+detail+"</p>";
+                    //     mainHeader = "<h1>"+name+"</h1>";
+                    //     storymain =  "<p>"+detail+"</p>";
 
-                        page1 = "<p>"+story+"</p>";
-                        page21 = "<p>"+language+"</p>";
-                        page22 = "<p>"+mode+"</p>";
-                        page31 = "<p>"+day+"</p>";
-                        page32 = "<p>"+web+"</p>";
+                    //     dango1 = "<li><img src='"+language1+"' alt=''></li>";
+                    //     dango1 += "<li><img src='"+language2+"' alt=''></li>";
+                    //     dango1 += "<li><img src='"+language3+"' alt=''></li>";
+                    //     dango1 += "<li><img src='"+language4+"' alt=''></li>";
 
-                        btn1 = "<button onclick='window.open('"+url1+"')'><span>"+title1+"</span></button>";
-                        btn2 = "<button onclick='window.open('"+url2+"')'><span>"+title2+"</span></button>";
-                        btn3 = "<button onclick='window.open('"+url3+"')'><span>"+title3+"</span></button>";
-                        btn4 = "<button onclick='window.open('"+url4+"')'><span>"+title4+"</span></button>";
-                        btn5 = "<button onclick='window.open('"+url5+"')'><span>"+title5+"</span></button>";
-                        btn6 = "<button onclick='window.open('"+url6+"')'><span>"+title6+"</span></button>";                        
+                    //     storypage = "<p>"+story+"</p>";
+                    //     modepage = "<p>"+mode+"</p>";
+                    //     daypage = "<p>"+day+"</p>";
+                    //     webpage = "<p>"+web+"</p>";
 
-                        pdfLink = "<button onclick='window.open('"+link1+"')'><span>"+pdfView+"</span></button>";
-                        webLink = "<button onclick='window.open('"+link2+"')'><span>"+webView+"</span></button>";
-                    }
+                    //     btn1 = "<a href='"+url1+"' target='_blank'>"+title1+"</a>";
+                    //     btn2 = "<a href='"+url2+"' target='_blank'>"+title2+"</a>";
+                    //     btn3 = "<a href='"+url3+"' target='_blank'>"+title3+"</a>";
+                    //     btn4 = "<a href='"+url4+"' target='_blank'>"+title4+"</a>";
+                    //     btn5 = "<a href='"+url5+"' target='_blank'>"+title5+"</a>";
+                    //     btn6 = "<a href='"+url6+"' target='_blank'>"+title6+"</a>";
+                    // }
                    
-                    $('main h1').html(mainHeader);
-                    $('.mainimg').html(mainstory);                    
-                    $('.story').html(storymain);    
-                    $('.page1 p').html(page1);
-                    $('.page2-1 li p').html(page21);
-                    $('.page2-1 li span').html(page22);                    
-                    $('.page2-2 li p').html(page31);
-                    $('.page2-2 li span').html(page32);   
-                    $('.page3 .pagebtn .on1').html(btn1);
-                    $('.page3 .pagebtn .on2').html(btn2);
-                    $('.page3 .pagebtn .on3').html(btn3);
-                    $('.page3 .pagebtn .on4').html(btn4);
-                    $('.page3 .pagebtn .on5').html(btn5);
-                    $('.page3 .pagebtn .on6').html(btn6);
-
-                    $('.page4 .pagebtn2 .btn1').html(pdfLink);
-                    $('.page4 .pagebtn2 .btn2').html(webLink);
                     
                     $('aside a').removeClass('in');
                     $("aside a[href='"+code+"']").addClass('in');
                     
                 });
-                $('.mainstory .mainimg img').mousemove(
-                    function(){
-                        $('#png2').css({opacity:"0"});
-                        $('#gif2').css({opacity:"1"});
-                    }
-                );
-                $('.mainstory .mainimg img').mouseleave(
-                    function(){
-                        $('#png2').css({opacity:"1"});
-                        $('#gif2').css({opacity:"0"});
-                    }
-                );
-
             //
             }
             funList('p01');
@@ -120,23 +107,6 @@ $(function(){
                     history.pushState({page:type},'pageHistory','');
                 };
     
-                $('.mainstory').on('mousewheel',function(e){
-                    if(!$('.clickpage').hasClass('open')){
-                        if (e.originalEvent.deltaY < 0){
-                            if(idx > 1){
-                                idx--;
-                                funList('p0'+idx);
-                            }
-                        }else{
-                            if(idx < len){
-                                idx++;
-                                funList('p0'+idx);
-                            }
-                        }
-                    }                
-                });  
-            
-
             $(window).on('popstate',function(){
                 var type;                
                 try{
@@ -148,15 +118,6 @@ $(function(){
                 funList(type);
             });
 
-            
-            $('.mainimg').click(function(){
-                $('.clickpage').toggleClass('open');
-                $('.clickpage').slideToggle(500);
-            });
-            $('aside a').click(function(){
-                $('.clickpage').removeClass('open');
-                $('.clickpage').css({display:"none"});
-            });
         //
         }
     });

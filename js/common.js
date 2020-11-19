@@ -12,10 +12,10 @@ $(function(){
                 left: e.screenX,
                 top: e.screenY - 70
             });
-            $('nav a, aside a, button').each(function(){
+            $('nav a, .btn button, .projectname a').each(function(){
                 $(this).on('mouseover',function(){
                    mouseCursor.addClass('link');
-                   mouseCursor.css('z-index',"-1");
+                   mouseCursor.css('z-index',"10");
                    $(this).addClass('hovered');
                 });
                 $(this).on('mouseleave',function(){
@@ -24,7 +24,7 @@ $(function(){
                    $(this).removeClass('hovered');
                 });
             });
-            $('.mainstory .mainimg img, .popup button').each(function(){
+            $('.projectlist a, .backbtn, .pagenum a').each(function(){
                 $(this).on('mouseover',function(){
                    mouseCursor.addClass('imghover');
                    mouseCursor.css('z-index',"55");

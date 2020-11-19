@@ -34,7 +34,8 @@ $(function(){
                 transformOrigin:"50% 100%",
                 animation: "pageChange .5s both ease"
             });
-            
+            $('.projectmain').fadeOut(50);
+
             function ink(){
                 localStorage.pageNum = $this.index();            
                 location.href = $this.attr('href');

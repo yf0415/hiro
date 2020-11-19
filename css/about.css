@@ -26,6 +26,7 @@ main .leftme h1 label {
   margin: -15px;
   display: inline-block;
   opacity: 0;
+  font-family: 'Anton', sans-serif;
 }
 
 @-webkit-keyframes labelAni {
@@ -120,7 +121,7 @@ main .leftme .leftmain .leftright {
 main .leftme .leftmain .leftright .name {
   font-family: 'Anton', sans-serif;
   font-size: 6.5em;
-  color: #b63727;
+  color: #598488;
   margin-top: -10%;
   -webkit-animation: pageAni2 .8s .8s forwards ease-in-out;
           animation: pageAni2 .8s .8s forwards ease-in-out;
@@ -209,7 +210,7 @@ main .leftme .leftmain .leftright .story {
 }
 
 main .leftme .leftmain .leftright .story span {
-  color: #b63727;
+  color: #598488;
 }
 
 @-webkit-keyframes pageAni3 {
@@ -309,6 +310,7 @@ main .rightme h1 {
 }
 
 main .rightme h1 label {
+  font-family: 'Anton', sans-serif;
   margin: -10px;
   display: inline-block;
   opacity: 0;

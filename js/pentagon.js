@@ -117,8 +117,8 @@ $(function(){
           valIndex = 0;
           ctx.beginPath();
           
-          ctx.fillStyle = "rgba(193,75,59, 0.5)";
-          ctx.strokeStyle = "rgba(193,75,59, 0.6)";
+          ctx.fillStyle = "rgba(89,132,136, 0.5)";
+          ctx.strokeStyle = "rgba(89,132,136, 0.6)";
           ctx.lineWidth =0;
           
           var value = skills[penIndex].values[valIndex];
