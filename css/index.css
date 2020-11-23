@@ -515,4 +515,57 @@ aside {
             transform: translate(-50%, -8%);
   }
 }
+
+@media All and (max-width: 1600px) {
+  main {
+    width: 100%;
+  }
+  main .second {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  main .second .mainfont2 {
+    width: 100%;
+    display: inline-block;
+  }
+  main .second .mainfont2 p {
+    width: 100%;
+    font-size: 4em;
+  }
+  main .second .mainfont2 p span {
+    font-size: 1em;
+  }
+  main .first {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  main .first .up {
+    display: block;
+    width: 55%;
+    margin: 0 auto;
+    text-align: right;
+  }
+  main .first .up .up1, main .first .up .up2, main .first .up .up3 {
+    width: 100%;
+  }
+  main .first .mainfont {
+    width: 100%;
+    display: inline-block;
+  }
+  main .first .mainfont p {
+    width: 100%;
+    font-size: 4em;
+  }
+  main .first .mainfont p span {
+    font-size: 1em;
+  }
+  main .first .down {
+    display: block;
+    width: 53%;
+    margin: 0 auto;
+    text-align: left;
+  }
+}
 /*# sourceMappingURL=index.css.map */

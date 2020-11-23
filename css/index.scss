@@ -249,3 +249,42 @@ aside{
         }
     }
 }
+
+
+@media All and (max-width:1600px){
+    main{
+        width:100%;
+        .second{
+            width:100%; margin:0 auto; text-align: center;
+            .mainfont2{
+                width:100%; display:inline-block;
+                p{width:100%;
+                    font-size:4em;
+                    span{font-size:1em;}
+                }
+            }
+        }
+        .first{
+            width:100%;margin:0 auto; text-align: center;
+            .up{
+                display:block;
+                width:55%; margin:0 auto;
+                text-align: right;
+                .up1,.up2,.up3{width:100%;}
+            }
+            .mainfont{
+                width:100%; display:inline-block;
+                p{width:100%;
+                    font-size:4em;
+                    span{font-size:1em;}
+                }
+            }
+            .down{
+                display:block;
+                width:53%; margin:0 auto;
+                text-align: left;
+            }
+        }
+        
+    }
+}

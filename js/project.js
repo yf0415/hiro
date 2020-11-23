@@ -10,7 +10,7 @@ $(function(){
 
             function funList(code){
                 var project = ''
-                var backimgMain,storyone,storytwo,backimgMokup,siteBtn,languageImg,dayHP,modeHP,webHP;
+                var backimgMain,storyone,storytwo,backimgMokup,siteBtn,languageImg,dayHP,modeHP,webHP,webbtn;
 
                 $(data).find('item').each(function(i){
                     
@@ -61,15 +61,16 @@ $(function(){
                         language4 = $(this).find('language4').text();
 
                         //html
-                        backimgMain = "<div class='backimg' style='background:url("+imgSrc+") no-repeat fixed;'></div>";
+                        webbtn = "<button type = 'button'><a href='"+url1+"' target='_blank'>WEB VIEW</a></button>";
+
+                        backimgMain = "<div class='backimg' style='background:url("+imgSrc+") no-repeat fixed 0% -550%;'></div>";
 
                         storyone = "<h1>"+name+"</h1>";
                         storyone += "<p>"+detail+"</p>";
-                        storyone += "<div class='projectname'><button type = 'button'><a href='"+url1+"' target='_blank'>WEB VIEW</a></button></div>";
 
                         storytwo = "<h3>동기</h3><p>"+story+"</p>";
                         
-                        backimgMokup = "<div class='backimg' style='background:url("+imgSrc2+") no-repeat fixed;'></div>";
+                        backimgMokup = "<div class='backimg' style='background:url("+imgSrc2+") no-repeat fixed 0% -150%;'></div>";
 
                         siteBtn = "<button type = 'button'><a href='"+url1+"' target='_blank'>"+title1+"</a></button>";
                         siteBtn += "<button type = 'button'><a href='"+url2+"' target='_blank'>"+title2+"</a></button>";
@@ -93,6 +94,8 @@ $(function(){
                         webHP += "<p>"+web+"</p>";
                     }
 
+
+                    $('main .pagebtn').html(webbtn);
 
                     $('.backpage1 .backimg').html(backimgMain);
                     $('.backpage1 .stroymain .storyone').html(storyone);
@@ -165,7 +168,7 @@ $(function(){
                 { 
                     var index2 = i +1;
                     var time2 = ((liall.length)-i ) * -120;
-                    $("main .projectlist li:nth-child("+index2+")").css( "-animation", "slideup "+time2+"ms 1.2s forwards ease-in-out" );
+                    $("main .projectlist li:nth-child("+index2+")").css( "-animation", "slideup "+time2+"ms 1.5s forwards ease-in-out" );
                 }
             }
             setTimeout(liAni,500);
@@ -175,36 +178,26 @@ $(function(){
                 funList($(this).attr('data-num')); 
                 $('.projectmain').fadeIn(0);
                 function playcss(){
-                    $('.projectmain').css({
-                        position:"absolute",
-                        left:"0",
-                        top:"35%",
-                        transform:"trnaslate(0,-35%)"
-                    });
+                    $('.projectmain').addClass('active');
                 }
                 setTimeout(playcss,150);
 
-                $('.backbtn').css("display","block");
+                $('.backbtn, .pagebtn').css("display","block");
                 function opacityspan(){
-                    $('.backbtn').css("opacity","1");
+                    $('.backbtn, .pagebtn').css("opacity","1");
                 }
                 setTimeout(opacityspan,330);
 
             });
             
             $('.backbtn').click(function(){
-                $('.projectmain').css({
-                    position:"absolute",
-                    left:"0",
-                    top:"100%",
-                    transform:"trnaslate(0,-100%)"
-                });
+                $('.projectmain').removeClass('active');
                 $("main .projectlist li").css("opacity","1");
                 function changeNone(){
                     $('.projectmain').css("display","none");
                 }
                 setTimeout(changeNone,200);
-                $('.backbtn').css("display","none");
+                $('.backbtn, .pagebtn').css("display","none");
 
             });
                 
@@ -223,7 +216,7 @@ $(document).ready(function() {
         { 
              var index = i +1;
              var time = ((input1.length)-i ) * -60;
-            $(".titleprject2 h1 label:nth-child("+index+")").css( "-animation", "labelAni "+time+"ms 2.5s forwards ease-in-out" );
+            $(".titleprject2 h1 label:nth-child("+index+")").css( "-animation", "labelAni 2.5s "+time+"ms forwards ease-in-out" );
         }    
     }
     setTimeout(aniGo,300);

@@ -11,7 +11,19 @@ $(function(){
                 left: e.screenX,
                 top: e.screenY - 70
             });
-            $('nav a, button, .projectname a').each(function(){
+            $('nav a, .pagebtn button').each(function(){
+               $(this).on('mouseover',function(){
+                  mouseCursor.addClass('link');
+                  mouseCursor.css('z-index',"0");
+                  $(this).addClass('hovered');
+               });
+               $(this).on('mouseleave',function(){
+                  mouseCursor.removeClass('link');
+                  mouseCursor.css('z-index',"1000");
+                  $(this).removeClass('hovered');
+               });
+           });
+            $('.btn button').each(function(){
                 $(this).on('mouseover',function(){
                    mouseCursor.addClass('link');
                    mouseCursor.css('z-index',"10");
@@ -32,6 +44,15 @@ $(function(){
                    mouseCursor.removeClass('imghover');
                 });
             });
+            $('.backbtn span').each(function(){
+               $(this).on('mouseover',function(){
+                  mouseCursor.addClass('imghover');
+                  mouseCursor.css('z-index',"0");
+               });
+               $(this).on('mouseleave',function(){
+                  mouseCursor.removeClass('imghover');
+               });
+           });
          });
      }
 //end  

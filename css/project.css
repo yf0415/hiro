@@ -8,13 +8,16 @@ main {
 
 main .backbtn {
   width: 100%;
-  height: 100%;
+  height: 10%;
   -webkit-transition: .8s;
   transition: .8s;
   display: none;
   opacity: 0;
-  position: fixed;
+  position: absolute;
   left: 70%;
+  top: 5%;
+  -webkit-transform: translate(-4%, 0);
+          transform: translate(-4%, 0);
 }
 
 main .backbtn span::after {
@@ -79,8 +82,70 @@ main .titleprject2 h1 label {
   }
 }
 
+main .pagebtn {
+  display: block;
+  opacity: 0;
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  left: 83%;
+  top: 25%;
+}
+
+main .pagebtn button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background: #434a4b;
+  margin: 2%;
+  position: relative;
+  overflow: hidden;
+  font-size: 1.1em;
+}
+
+main .pagebtn button a {
+  color: #fff;
+  z-index: 100;
+  position: relative;
+}
+
+main .pagebtn button a:hover {
+  position: relative;
+  color: #fff;
+  z-index: 100;
+}
+
+main .pagebtn button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 80%;
+  -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+  -webkit-transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), transform 0.75s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  background: #598488;
+  opacity: 0;
+}
+
+main .pagebtn button:hover::before {
+  opacity: 1;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+  -webkit-transform: translate3d(-50%, -50%, 0) scale3d(1.5, 1.5, 1.5);
+          transform: translate3d(-50%, -50%, 0) scale3d(1.5, 1.5, 1.5);
+}
+
 main .projectlist {
-  width: 250%;
+  width: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,6 +230,14 @@ main .projectlist li .smalllist p {
   }
 }
 
+.active {
+  position: absolute;
+  left: 0;
+  top: 19%;
+  -webkit-transform: translate(0, -19%);
+          transform: translate(0, -19%);
+}
+
 .projectmain {
   display: none;
   width: 100%;
@@ -245,56 +318,6 @@ main .projectlist li .smalllist p {
   color: #598488;
 }
 
-.projectmain .openpage .page1 .backpage1 .stroymain .storyone .projectname {
-  width: 100%;
-  z-index: 15;
-  text-align: right;
-  display: block;
-}
-
-.projectmain .openpage .page1 .backpage1 .stroymain .storyone .projectname button {
-  width: 200px;
-  height: 50px;
-  border: none;
-  background: #434a4b;
-  margin: 2%;
-  position: relative;
-  overflow: hidden;
-  font-size: 1.1em;
-}
-
-.projectmain .openpage .page1 .backpage1 .stroymain .storyone .projectname button a {
-  color: #eee;
-  z-index: 1;
-  position: relative;
-}
-
-.projectmain .openpage .page1 .backpage1 .stroymain .storyone .projectname button::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 150px;
-  height: 150px;
-  border-radius: 80%;
-  -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
-          transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
-  -webkit-transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), transform 0.75s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
-  background: #598488;
-  opacity: 0;
-}
-
-.projectmain .openpage .page1 .backpage1 .stroymain .storyone .projectname button:hover::before {
-  opacity: 1;
-  -webkit-transition-duration: .8s;
-          transition-duration: .8s;
-  -webkit-transform: translate3d(-50%, -50%, 0) scale3d(1.5, 1.5, 1.5);
-          transform: translate3d(-50%, -50%, 0) scale3d(1.5, 1.5, 1.5);
-}
-
 .projectmain .openpage .page1 .backpage1 .stroymain .storyone p {
   font-size: 1.3em;
   white-space: pre-line;
@@ -363,14 +386,14 @@ main .projectlist li .smalllist p {
 }
 
 .projectmain .openpage .page1 .backpage1 .etcline .etcright .etcup .day {
-  width: 50%;
+  width: 55%;
   float: left;
 }
 
 .projectmain .openpage .page1 .backpage1 .etcline .etcright .etcup .day h3 {
   font-size: 1.8em;
   font-weight: 900;
-  padding-bottom: 1%;
+  padding-bottom: 3%;
 }
 
 .projectmain .openpage .page1 .backpage1 .etcline .etcright .etcup .day p {
@@ -380,14 +403,14 @@ main .projectlist li .smalllist p {
 }
 
 .projectmain .openpage .page1 .backpage1 .etcline .etcright .etcup .mode {
-  width: 50%;
+  width: 45%;
   float: right;
 }
 
 .projectmain .openpage .page1 .backpage1 .etcline .etcright .etcup .mode h3 {
   font-size: 1.8em;
   font-weight: 900;
-  padding-bottom: 1%;
+  padding-bottom: 3%;
 }
 
 .projectmain .openpage .page1 .backpage1 .etcline .etcright .etcup .mode p {
@@ -402,14 +425,14 @@ main .projectlist li .smalllist p {
 }
 
 .projectmain .openpage .page1 .backpage1 .etcline .etcright .etcdown .web {
-  width: 50%;
+  width: 55%;
   float: left;
 }
 
 .projectmain .openpage .page1 .backpage1 .etcline .etcright .etcdown .web h3 {
   font-size: 1.8em;
   font-weight: 900;
-  padding-bottom: 1%;
+  padding-bottom: 3%;
 }
 
 .projectmain .openpage .page1 .backpage1 .etcline .etcright .etcdown .web p {
@@ -419,14 +442,14 @@ main .projectlist li .smalllist p {
 }
 
 .projectmain .openpage .page1 .backpage1 .etcline .etcright .etcdown .share {
-  width: 50%;
+  width: 45%;
   float: right;
 }
 
 .projectmain .openpage .page1 .backpage1 .etcline .etcright .etcdown .share h3 {
   font-size: 1.8em;
   font-weight: 900;
-  padding-bottom: 1%;
+  padding-bottom: 3%;
 }
 
 .projectmain .openpage .page1 .backpage1 .etcline .etcright .etcdown .share p {
@@ -489,9 +512,15 @@ main .projectlist li .smalllist p {
 }
 
 .projectmain .openpage .page2 .sitepage .btn button a {
-  color: #eee;
-  z-index: 1;
+  color: #fff;
+  z-index: 100;
   position: relative;
+}
+
+.projectmain .openpage .page2 .sitepage .btn button a:hover {
+  position: relative;
+  color: #fff;
+  z-index: 100;
 }
 
 .projectmain .openpage .page2 .sitepage .btn button::before {
@@ -543,5 +572,415 @@ main .projectlist li .smalllist p {
   position: relative;
   color: #fff;
   z-index: 100;
+}
+
+.backdeco {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  overflow: hidden;
+  z-index: -50;
+  opacity: 0;
+  -webkit-animation: fadein 1.4s .5s forwards ease-in-out;
+          animation: fadein 1.4s .5s forwards ease-in-out;
+}
+
+.backdeco .kelloggsimg1 {
+  width: 200px;
+  position: absolute;
+  left: 90%;
+  top: 80%;
+  -webkit-transform: translate(0%, 0%) rotate(-15deg);
+          transform: translate(0%, 0%) rotate(-15deg);
+}
+
+.backdeco .kelloggsimg2 {
+  width: 100px;
+  position: absolute;
+  left: 96%;
+  top: 74%;
+  -webkit-transform: trnaslate(-96%, -74%) rotate(-45deg);
+          transform: trnaslate(-96%, -74%) rotate(-45deg);
+  -webkit-animation: moving1 1.4s infinite ease-in-out;
+          animation: moving1 1.4s infinite ease-in-out;
+}
+
+@-webkit-keyframes moving1 {
+  0% {
+    -webkit-transform: translate(0, 0) rotate(-45deg);
+            transform: translate(0, 0) rotate(-45deg);
+  }
+  50% {
+    -webkit-transform: translate(0, -5%) rotate(-45deg);
+            transform: translate(0, -5%) rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: translate(0, 0) rotate(-45deg);
+            transform: translate(0, 0) rotate(-45deg);
+  }
+}
+
+@keyframes moving1 {
+  0% {
+    -webkit-transform: translate(0, 0) rotate(-45deg);
+            transform: translate(0, 0) rotate(-45deg);
+  }
+  50% {
+    -webkit-transform: translate(0, -5%) rotate(-45deg);
+            transform: translate(0, -5%) rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: translate(0, 0) rotate(-45deg);
+            transform: translate(0, 0) rotate(-45deg);
+  }
+}
+
+.backdeco .kelloggsimg3 {
+  width: 150px;
+  position: absolute;
+  left: 85%;
+  top: 90%;
+  -webkit-transform: trnaslate(-85%, -90%) rotate(-15deg);
+          transform: trnaslate(-85%, -90%) rotate(-15deg);
+  -webkit-animation: moving 1.4s infinite ease-in-out;
+          animation: moving 1.4s infinite ease-in-out;
+}
+
+@-webkit-keyframes moving {
+  0% {
+    -webkit-transform: translate(0, 0) rotate(-15deg);
+            transform: translate(0, 0) rotate(-15deg);
+  }
+  50% {
+    -webkit-transform: translate(0, -5%) rotate(-15deg);
+            transform: translate(0, -5%) rotate(-15deg);
+  }
+  100% {
+    -webkit-transform: translate(0, 0) rotate(-15deg);
+            transform: translate(0, 0) rotate(-15deg);
+  }
+}
+
+@keyframes moving {
+  0% {
+    -webkit-transform: translate(0, 0) rotate(-15deg);
+            transform: translate(0, 0) rotate(-15deg);
+  }
+  50% {
+    -webkit-transform: translate(0, -5%) rotate(-15deg);
+            transform: translate(0, -5%) rotate(-15deg);
+  }
+  100% {
+    -webkit-transform: translate(0, 0) rotate(-15deg);
+            transform: translate(0, 0) rotate(-15deg);
+  }
+}
+
+.backdeco .momunimg1 {
+  width: 200px;
+  position: absolute;
+  left: 1%;
+  top: 28%;
+  -webkit-transform: trnaslate(-1%, -28%) rotate(35deg);
+          transform: trnaslate(-1%, -28%) rotate(35deg);
+}
+
+.backdeco .momunimg2 {
+  width: 150px;
+  position: absolute;
+  left: 7%;
+  top: 25%;
+  -webkit-transform: translate(-7%, -25%);
+          transform: translate(-7%, -25%);
+  -webkit-animation: moving 1.4s infinite ease-in-out;
+          animation: moving 1.4s infinite ease-in-out;
+}
+
+@keyframes moving {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, -5%);
+            transform: translate(0, -5%);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+.backdeco .momunimg3 {
+  width: 100px;
+  position: absolute;
+  left: 0%;
+  top: 38%;
+  -webkit-transform: translate(0, -38%);
+          transform: translate(0, -38%);
+  -webkit-animation: moving 1.4s infinite ease-in-out;
+          animation: moving 1.4s infinite ease-in-out;
+}
+
+@keyframes moving {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, -5%);
+            transform: translate(0, -5%);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 865px) and (max-width: 1100px) {
+  main {
+    width: 100vh;
+    padding-top: 20%;
+  }
+  main .backbtn {
+    position: absolute;
+    left: 20%;
+    top: -50%;
+  }
+  main .pagebtn {
+    position: absolute;
+    left: 1%;
+    top: -50%;
+  }
+  main h1 {
+    display: block;
+    width: 100%;
+  }
+  main h1 label {
+    font-size: .8em;
+  }
+  main h1 label:nth-of-type(1) {
+    margin-left: 0;
+  }
+  main .projectlist {
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+  }
+  main .projectlist li {
+    width: 50%;
+    margin: 0 auto;
+  }
+  main .projectlist li:nth-of-type(2n) {
+    padding-right: 0;
+  }
+  main .backbtn {
+    width: 100%;
+    z-index: 55;
+    display: block;
+    position: absolute;
+    left: 55%;
+    top: 25%;
+  }
+  main .pagebtn {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 75%;
+    top: 0%;
+  }
+  .active {
+    position: absolute;
+    left: 0;
+    top: -27%;
+    -webkit-transform: translate(0, 27%);
+            transform: translate(0, 27%);
+  }
+  .projectmain {
+    width: 100%;
+  }
+  .projectmain .openpage {
+    width: 100%;
+  }
+  .projectmain .openpage .page1 {
+    width: 100%;
+  }
+  .projectmain .openpage .page1 .backimg {
+    height: 10vh;
+  }
+  .projectmain .openpage .page1 .backimg .backimg {
+    background-position-y: -100%;
+  }
+  .projectmain .openpage .page1 .stroymain {
+    width: 100%;
+    height: 80vh;
+  }
+  .projectmain .openpage .page2 {
+    padding-top: 110%;
+  }
+  .projectmain .openpage .page2 .sitepage {
+    padding-top: 20%;
+  }
+  .backdeco {
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: -50;
+  }
+  .backdeco .kelloggsimg1 {
+    width: 200px;
+    position: absolute;
+    left: 80%;
+    top: 80%;
+    -webkit-transform: translate(0%, 0%) rotate(-15deg);
+            transform: translate(0%, 0%) rotate(-15deg);
+  }
+  .backdeco .kelloggsimg2 {
+    width: 100px;
+    position: absolute;
+    left: 91%;
+    top: 74%;
+    -webkit-transform: trnaslate(-96%, -74%) rotate(-45deg);
+            transform: trnaslate(-96%, -74%) rotate(-45deg);
+  }
+  .backdeco .kelloggsimg3 {
+    width: 150px;
+    position: absolute;
+    left: 70%;
+    top: 90%;
+    -webkit-transform: trnaslate(-85%, -90%) rotate(-15deg);
+            transform: trnaslate(-85%, -90%) rotate(-15deg);
+  }
+  .backdeco .momunimg1 {
+    width: 200px;
+    position: absolute;
+    left: 31%;
+    top: 18%;
+    -webkit-transform: trnaslate(-1%, -28%) rotate(35deg);
+            transform: trnaslate(-1%, -28%) rotate(35deg);
+  }
+  .backdeco .momunimg2 {
+    width: 150px;
+    position: absolute;
+    left: 42%;
+    top: 14%;
+    -webkit-transform: translate(-7%, -25%);
+            transform: translate(-7%, -25%);
+    -webkit-animation: moving 1.4s infinite ease-in-out;
+            animation: moving 1.4s infinite ease-in-out;
+  }
+  .backdeco .momunimg3 {
+    width: 100px;
+    position: absolute;
+    left: 27%;
+    top: 25%;
+    -webkit-transform: translate(0, -38%);
+            transform: translate(0, -38%);
+  }
+}
+
+@media all and (max-width: 864px) {
+  main {
+    width: 100%;
+    height: 100%;
+  }
+  main .titleprject2 h1 {
+    display: block;
+  }
+  main .titleprject2 h1 label {
+    font-size: 46px;
+  }
+  main .titleprject2 h1 label:nth-of-type(1) {
+    margin-left: 0;
+  }
+  main .projectlist {
+    width: 100%;
+    display: block;
+    padding-bottom: 5%;
+  }
+  main .projectlist li {
+    width: 100%;
+  }
+  .backdeco {
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: -50;
+  }
+  .backdeco .kelloggsimg1 {
+    width: 200px;
+    position: absolute;
+    left: 55%;
+    top: 80%;
+    -webkit-transform: translate(0%, 0%) rotate(-15deg);
+            transform: translate(0%, 0%) rotate(-15deg);
+  }
+  .backdeco .kelloggsimg2 {
+    width: 100px;
+    position: absolute;
+    left: 73%;
+    top: 75%;
+    -webkit-transform: trnaslate(-73%, -75%) rotate(-45deg);
+            transform: trnaslate(-73%, -75%) rotate(-45deg);
+  }
+  .backdeco .kelloggsimg3 {
+    width: 150px;
+    position: absolute;
+    left: 25%;
+    top: 82%;
+    -webkit-transform: trnaslate(-25%, -82%) rotate(-15deg);
+            transform: trnaslate(-25%, -82%) rotate(-15deg);
+  }
+  .backdeco .momunimg1 {
+    width: 150px;
+    position: absolute;
+    left: 36%;
+    top: 16%;
+    -webkit-transform: trnaslate(-36%, -16%) rotate(35deg);
+            transform: trnaslate(-36%, -16%) rotate(35deg);
+  }
+  .backdeco .momunimg2 {
+    width: 150px;
+    position: absolute;
+    left: 57%;
+    top: 12%;
+    -webkit-transform: translate(-57%, -12%);
+            transform: translate(-57%, -12%);
+    -webkit-animation: moving 1.4s infinite ease-in-out;
+            animation: moving 1.4s infinite ease-in-out;
+  }
+  .backdeco .momunimg3 {
+    width: 100px;
+    position: absolute;
+    left: 27%;
+    top: 22%;
+    -webkit-transform: translate(0, -22%);
+            transform: translate(0, -22%);
+  }
 }
 /*# sourceMappingURL=project.css.map */
