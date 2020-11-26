@@ -115,17 +115,17 @@ $(function(){
                     $('main .projectlist').html(project); 
                     bln = false ;
                 }
-                if(matchMedia("(min-width:1101px) and (max-width:1900px)").matches){
+                if(matchMedia("(min-width:1026px) and (max-width:1560px)").matches){
                     $('.projectmain .openpage .page1 .backpage1 .backimg .bgimg').css({
-                        backgroundPosition:"left 28%",
-                        backgroundSize:"60% 50%"
+                        backgroundPosition:"left top",
+                        backgroundSize:"100% 100%"
                      });
                     $('.projectmain .openpage .page2 .backpage2 .backimg .bgimg').css({
-                        backgroundSize:"60% 50%",
-                        backgroundPosition:"left 80%"
+                        backgroundSize:"100% 100%",
+                        backgroundPosition:"left top"
                     });
                 }
-                if(matchMedia("(min-width:865px) and (max-width:1100px)").matches){
+                if(matchMedia("(min-width:865px) and (max-width:1025px)").matches){
                     $('.projectmain .openpage .page1 .backpage1 .backimg .bgimg').css({
                         backgroundPosition:"left 20%",
                         backgroundSize:"60% 30%"
