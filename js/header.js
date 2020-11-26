@@ -47,7 +47,7 @@ $(function(){
 
         function printNow(){
             var now = new Date();   
-            nowDtae = now.getFullYear()+' - '+now.getMonth()+' - 0'+(now.getDay()+1);
+            nowDtae = now.getFullYear()+' - '+(now.getMonth()+1)+' - '+(now.getDate());
             var nowHours = addZeros(now.getHours(),2);
             var nowMinutes = addZeros(now.getMinutes(),2);
             var nowSeconds = addZeros(now.getSeconds(),2);

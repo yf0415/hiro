@@ -516,56 +516,102 @@ aside {
   }
 }
 
-@media All and (max-width: 1600px) {
+@media (min-width: 1101px) and (max-width: 1900px) {
+  main article .second .logo img {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    -webkit-transform: translate(-50%, 35%);
+            transform: translate(-50%, 35%);
+  }
+  main article .second .mainfont2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, 169%);
+            transform: translate(-50%, 169%);
+    -webkit-animation: open7 .5s 3.6s linear forwards;
+            animation: open7 .5s 3.6s linear forwards;
+  }
+  @-webkit-keyframes open7 {
+    100% {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, 220%);
+              transform: translate(-50%, 220%);
+    }
+  }
+  @keyframes open7 {
+    100% {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, 220%);
+              transform: translate(-50%, 220%);
+    }
+  }
+  main article .first {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, 25%);
+            transform: translate(-50%, 25%);
+  }
+}
+
+@media All and (max-width: 1100px) {
   main {
     width: 100%;
   }
-  main .second {
+  main article {
     width: 100%;
     margin: 0 auto;
-    text-align: center;
   }
-  main .second .mainfont2 {
+  main article .second {
+    width: 100%;
+  }
+  main article .second .mainfont2 {
     width: 100%;
     display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-25%, 234%);
+            transform: translate(-25%, 234%);
+    -webkit-animation: open7 .5s 3.6s linear forwards;
+            animation: open7 .5s 3.6s linear forwards;
   }
-  main .second .mainfont2 p {
-    width: 100%;
-    font-size: 4em;
+  @-webkit-keyframes open7 {
+    100% {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-25%, 280%);
+              transform: translate(-25%, 280%);
+    }
   }
-  main .second .mainfont2 p span {
-    font-size: 1em;
+  @keyframes open7 {
+    100% {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-25%, 280%);
+              transform: translate(-25%, 280%);
+    }
   }
-  main .first {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-  }
-  main .first .up {
-    display: block;
-    width: 55%;
-    margin: 0 auto;
-    text-align: right;
-  }
-  main .first .up .up1, main .first .up .up2, main .first .up .up3 {
-    width: 100%;
-  }
-  main .first .mainfont {
+  main article .first {
     width: 100%;
     display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-25%, 50%);
+            transform: translate(-25%, 50%);
   }
-  main .first .mainfont p {
-    width: 100%;
-    font-size: 4em;
-  }
-  main .first .mainfont p span {
-    font-size: 1em;
-  }
-  main .first .down {
-    display: block;
-    width: 53%;
-    margin: 0 auto;
-    text-align: left;
+  main article .first .up {
+    width: 54%;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=index.css.map */

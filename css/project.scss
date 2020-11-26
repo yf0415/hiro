@@ -12,7 +12,6 @@ main{
         opacity: 0;
         position: absolute;
         left:70%; top:5%;
-        transform: translate(-4%,0);
         span::after {
             content: '';
             width: 15px;
@@ -155,11 +154,7 @@ main{
     }
 }
 
-.active{
-    position: absolute;
-    left:0; top:19%;
-    transform: translate(0,-19%);
-}
+
 .projectmain{
     display:none;
     width:100%;
@@ -197,13 +192,13 @@ main{
                 width:100%; height: 100vh;
                 z-index:1;
                 position: relative;
-                .backimg{
+                .bgimg{
                     width:100%; height:90vh;
                     background-size:100%;
                     -webkit-filter: grayscale(100%);
                     filter: gray;
                 }
-                .backimg:hover{-webkit-filter: grayscale(0%);}
+                .bgimg:hover{-webkit-filter: grayscale(0%);}
                 .stroymain{
                     width:100%;
                     padding:3% 0 2% 0;
@@ -346,12 +341,12 @@ main{
 
             .backpage2{
                 width:100%; height: 100vh;
-                .backimg{
+                .bgimg{
                     width:100%; height:120vh;
                     -webkit-filter: grayscale(100%);
                     filter: gray;
                 }
-                .backimg:hover{-webkit-filter: grayscale(0%);}
+                .bgimg:hover{-webkit-filter: grayscale(0%);}
             }
             .sitepage{
                 width:90%; 
@@ -425,7 +420,10 @@ main{
         }
     }
 }
-
+.active{
+    position: absolute;
+    left:0; top:35%;
+}
 .backdeco{
     width:100%; height:100%;
     position: absolute;
@@ -502,21 +500,70 @@ main{
     }
 }
 
+
+@media (min-width:1101px) and (max-width:1900px){
+    .active{
+        position: absolute;
+        left:0; top:26%;
+    }
+    main{
+        .backbtn{
+            left:61%; top:-3%;
+            span{width:12px; height:12px;}
+        }
+        .pagebtn{
+            left:85%; top:18%;
+            button{
+                width:120px; height:40px;
+                font-size:.9em;
+            }
+        }
+        .titleprject2{
+            h1{
+                padding-top:0;
+                margin-top:-2%;
+                label{font-size:.8em;}
+            }
+        }
+        .projectlist{
+            margin-top:-3%;
+            li{
+                .smalllist{
+                    h1{font-size:.9em;}
+                    p{font-size:1em;}
+                }
+            }
+        }
+    }
+    
+    .projectmain{
+        .openpage{
+            .page1{
+                .backpage1{
+                    .backimg{}
+                }
+            }
+        }
+    }
+}
 @media (min-width:865px) and (max-width:1100px){
     main{
-        width:100vh;
+        width:95%; margin:0 auto;
         padding-top:20%;
         .backbtn{
             position: absolute;
-            left:20%; top:-50%;
+            left:100%; top:0%;
+            transform: translate(-8%, -200%);
         }
         .pagebtn{
             position: absolute;
-            left:1%; top:-50%;
+            left:90%; top:0%;
+            transform: translate(-2%,19%);
         }
         h1{
             display:block;
             width:100%;
+            margin-top:-20%;
             label{font-size:.8em;}
             label:nth-of-type(1){margin-left:0; }
         }
@@ -525,7 +572,7 @@ main{
             margin:0 auto;
             display:block;
             li{
-                width:50%; margin: 0 auto;
+                width:100%; margin: 0 auto;
             }
             li:nth-of-type(2n){padding-right: 0;}
         }
@@ -545,24 +592,32 @@ main{
     }
     .active{
         position: absolute;
-        left:0; top:-27%;
-        transform: translate(0,27%);
+        left:0; top:25%;
     }
     .projectmain{
         width:100%;
-        .openpage{width:100%;
+        .openpage{width:100%; 
             .page1{
                 width:100%;
-                .backimg{height:10vh; 
-                    .backimg{background-position-y: -100%;}
+                .backimg{
+                    .bgimg{
+                        height:45vh;    
+                    }
                 }
                 .stroymain{
-                    width:100%; height: 80vh;
+                    width:100%;
+                    z-index:50;
                 }
             }
             .page2{
-                padding-top:110%;
-                .sitepage{padding-top:20%;}
+                .backpage2{height:90vh;
+                    .backimg{
+                    }
+                }
+                .sitepage{    
+                    padding:5% 0;                
+                    height:40vh;
+                }
             }
         }
     }
@@ -619,7 +674,15 @@ main{
 @media all and (max-width:864px){
     main{
         width:100%; height: 100%;
+        .pagebtn{
+            position: absolute;
+            left:80%; top:27%;
+            button{
+                width:80px; height:20px; font-size:.6em
+            }
+        }
         .titleprject2{
+            width:95%; margin:0 auto;
             h1{
                 display:block;
                 label{font-size:46px;}
@@ -630,8 +693,49 @@ main{
             width:100%;
             display:block;
             padding-bottom:5%;
+            
             li{
+                font-size:.6em;
                 width:100%;
+            }
+        }
+    }
+    .active{
+        position: absolute;
+        left:0; top:32%;
+    }
+    .projectmain{
+        width:100%;
+        font-size:.4em;
+        .openpage{width:100%; 
+            .page1{
+                width:100%;
+                .backimg{
+                    .bgimg{
+                        height:45vh;    
+                    }
+                }
+                .stroymain{
+                    width:100%;
+                    z-index:50;
+                }
+                .etcline{width:90%; margin:0 auto; font-size:.9em;}
+            }
+            .page2{
+                .backpage2{
+                    height: 50vh;
+                    .backimg{
+                        .bgimg{height:60vh;}
+                    }
+                }
+                .sitepage{    
+                    padding:20% 0 0 0; 
+                    .btn{
+                        button{
+                            width:100px; height:30px;
+                        }
+                    }
+                }
             }
         }
     }

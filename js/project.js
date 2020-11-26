@@ -63,14 +63,14 @@ $(function(){
                         //html
                         webbtn = "<button type = 'button'><a href='"+url1+"' target='_blank'>WEB VIEW</a></button>";
 
-                        backimgMain = "<div class='backimg' style='background:url("+imgSrc+") no-repeat fixed 0% -550%;'></div>";
+                        backimgMain = "<div class='bgimg' style='background:url("+imgSrc+") no-repeat fixed left top;'></div>";
 
                         storyone = "<h1>"+name+"</h1>";
                         storyone += "<p>"+detail+"</p>";
 
                         storytwo = "<h3>동기</h3><p>"+story+"</p>";
                         
-                        backimgMokup = "<div class='backimg' style='background:url("+imgSrc2+") no-repeat fixed 0% -150%;'></div>";
+                        backimgMokup = "<div class='bgimg' style='background:url("+imgSrc2+") no-repeat fixed left top;'></div>";
 
                         siteBtn = "<button type = 'button'><a href='"+url1+"' target='_blank'>"+title1+"</a></button>";
                         siteBtn += "<button type = 'button'><a href='"+url2+"' target='_blank'>"+title2+"</a></button>";
@@ -115,6 +115,37 @@ $(function(){
                     $('main .projectlist').html(project); 
                     bln = false ;
                 }
+                if(matchMedia("(min-width:1101px) and (max-width:1900px)").matches){
+                    $('.projectmain .openpage .page1 .backpage1 .backimg .bgimg').css({
+                        backgroundPosition:"left 28%",
+                        backgroundSize:"60% 50%"
+                     });
+                    $('.projectmain .openpage .page2 .backpage2 .backimg .bgimg').css({
+                        backgroundSize:"60% 50%",
+                        backgroundPosition:"left 80%"
+                    });
+                }
+                if(matchMedia("(min-width:865px) and (max-width:1100px)").matches){
+                    $('.projectmain .openpage .page1 .backpage1 .backimg .bgimg').css({
+                        backgroundPosition:"left 20%",
+                        backgroundSize:"60% 30%"
+                     });
+                    $('.projectmain .openpage .page2 .backpage2 .backimg .bgimg').css({
+                        backgroundSize:"60% 33%",
+                        backgroundPosition:"left 40%"
+                    });
+                }
+                if(matchMedia("all and (max-width:864px)").matches){
+                    $('.projectmain .openpage .page1 .backpage1 .backimg .bgimg').css({
+                        backgroundPosition:"left 25%",
+                        backgroundSize:"60% 30%"
+                     });
+                    $('.projectmain .openpage .page2 .backpage2 .backimg .bgimg').css({
+                        backgroundSize:"60% 30%",
+                        backgroundPosition:"left 80%"
+                    });
+                }
+                
             //
             }
             funList('p01');
