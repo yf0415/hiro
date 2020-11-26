@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,OAAO,CAAC,iBAAI",
-    "sources": [
-        "loader.scss"
-    ],
-    "names": [],
-    "file": "loader.css"
-}
