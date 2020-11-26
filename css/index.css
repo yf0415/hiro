@@ -5,17 +5,17 @@ main {
   display: block;
 }
 
-main article {
+main .mainopen {
   width: 100%;
   position: relative;
 }
 
-main article span {
+main .mainopen span {
   font-family: 'Teko', sans-serif;
   color: #598488;
 }
 
-main article .first {
+main .mainopen .first {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -25,12 +25,12 @@ main article .first {
           animation: close .8s 2.8s linear forwards;
 }
 
-main article .first .up {
+main .mainopen .first .up {
   width: 100%;
   text-align: right;
 }
 
-main article .first .up .up1 {
+main .mainopen .first .up .up1 {
   width: 100%;
   opacity: 0;
   -webkit-transform-origin: bottom;
@@ -65,13 +65,13 @@ main article .first .up .up1 {
   }
 }
 
-main article .first .up .up1 .kr {
+main .mainopen .first .up .up1 .kr {
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: bold;
   font-size: 2em;
 }
 
-main article .first .up .up2 {
+main .mainopen .first .up .up2 {
   opacity: 0;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
@@ -105,17 +105,17 @@ main article .first .up .up2 {
   }
 }
 
-main article .first .up .up2 .jpkt {
+main .mainopen .first .up .up2 .jpkt {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: bold;
   font-size: 2em;
 }
 
-main article .first .up .up2 .jpkt span {
+main .mainopen .first .up .up2 .jpkt span {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
-main article .first .up .up3 {
+main .mainopen .first .up .up3 {
   opacity: 0;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
@@ -149,17 +149,17 @@ main article .first .up .up3 {
   }
 }
 
-main article .first .up .up3 .jphg {
+main .mainopen .first .up .up3 .jphg {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: bold;
   font-size: 4em;
 }
 
-main article .first .up .up3 .jphg span {
+main .mainopen .first .up .up3 .jphg span {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
-main article .first .mainfont {
+main .mainopen .first .mainfont {
   opacity: 0;
   -webkit-animation: open1 .8s linear forwards;
           animation: open1 .8s linear forwards;
@@ -183,20 +183,20 @@ main article .first .mainfont {
   }
 }
 
-main article .first .mainfont p {
+main .mainopen .first .mainfont p {
   font-family: 'Teko', sans-serif;
   font-weight: bold;
   font-size: 8em;
 }
 
-main article .first .down {
+main .mainopen .first .down {
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: bold;
   font-size: 2.2em;
   line-height: 1.2;
 }
 
-main article .first .down .down1 {
+main .mainopen .first .down .down1 {
   opacity: 0;
   -webkit-transform-origin: top;
           transform-origin: top;
@@ -230,7 +230,7 @@ main article .first .down .down1 {
   }
 }
 
-main article .first .down .down2 {
+main .mainopen .first .down .down2 {
   opacity: 0;
   -webkit-animation: open6 .3s 1.6s linear forwards;
           animation: open6 .3s 1.6s linear forwards;
@@ -270,11 +270,11 @@ main article .first .down .down2 {
   }
 }
 
-main article .second {
+main .mainopen .second {
   position: relative;
 }
 
-main article .second .logo {
+main .mainopen .second .logo {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -315,14 +315,14 @@ main article .second .logo {
   }
 }
 
-main article .second .logo img {
+main .mainopen .second .logo img {
   -webkit-transform: translate(-50%, 70%);
           transform: translate(-50%, 70%);
   -webkit-transition: .7s;
   transition: .7s;
 }
 
-main article .second .mainfont2 {
+main .mainopen .second .mainfont2 {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -352,7 +352,7 @@ main article .second .mainfont2 {
   }
 }
 
-main article .second .mainfont2 p {
+main .mainopen .second .mainfont2 p {
   font-family: 'Teko', sans-serif;
   font-weight: bold;
   font-size: 8em;
@@ -517,14 +517,14 @@ aside {
 }
 
 @media (min-width: 1101px) and (max-width: 1900px) {
-  main article .second .logo img {
+  main .mainopen .second .logo img {
     position: absolute;
     left: 50%;
     top: 25%;
     -webkit-transform: translate(-50%, 35%);
             transform: translate(-50%, 35%);
   }
-  main article .second .mainfont2 {
+  main .mainopen .second .mainfont2 {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -551,7 +551,7 @@ aside {
               transform: translate(-50%, 220%);
     }
   }
-  main article .first {
+  main .mainopen .first {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -564,14 +564,14 @@ aside {
   main {
     width: 100%;
   }
-  main article {
+  main .mainopen {
     width: 100%;
     margin: 0 auto;
   }
-  main article .second {
+  main .mainopen .second {
     width: 100%;
   }
-  main article .second .mainfont2 {
+  main .mainopen .second .mainfont2 {
     width: 100%;
     display: inline-block;
     position: absolute;
@@ -600,7 +600,7 @@ aside {
               transform: translate(-25%, 280%);
     }
   }
-  main article .first {
+  main .mainopen .first {
     width: 100%;
     display: inline-block;
     position: absolute;
@@ -609,7 +609,7 @@ aside {
     -webkit-transform: translate(-25%, 50%);
             transform: translate(-25%, 50%);
   }
-  main article .first .up {
+  main .mainopen .first .up {
     width: 54%;
     margin: 0;
   }

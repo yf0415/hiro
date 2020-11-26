@@ -25,11 +25,11 @@ main{
             font-family: 'Anton', sans-serif;
             font-size:8.6em;            
             padding-top:2%;
-            
+            transform-origin: left;;
             @keyframes labelAni{
                 0%{
                     opacity: 0;
-                    transform: trnaslateX(100%);
+                    transform:  trnaslateX(100%);
                 }
                 100%{
                     opacity: 1;

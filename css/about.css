@@ -20,6 +20,8 @@ main .leftme h1 {
   font-family: 'Anton', sans-serif;
   font-size: 8.6em;
   padding-top: 2%;
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 main .leftme h1 label {
