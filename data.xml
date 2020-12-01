@@ -93,46 +93,39 @@
     </item>
     <item>
         <type>p03</type>
-        <imgSrc>img/kelloggsmain.jpg</imgSrc>
-        <imgSrc2>img/kelloggsmokup.jpg</imgSrc2>
-        <name>Kellogg’s</name>
+        <imgSrc>img/kanumain.jpg</imgSrc>
+        <imgSrc2>img/kanumokup.jpg</imgSrc2>
+        <name>KANU</name>
         <detail>
-            온가족이 즐겨먹는 켈로그 시리얼의 홈페이지를 리뉴얼하였습니다. 
-            단순한 상품 나열로만 되어있어 지루함을 안겨줄 수 있는 기존 켈로그 홈페이지의 단점을 애니메이션 효과를 사용하여 시각적 효과를 줘 단조로움을 보완해보았습니다.
+            모바일 페이지만 존재하는 카누 브랜드의 웹페이지를 
+            기획 및 디자인하였습니다.
         </detail>
         <story>
-            벤치마킹한 사이트(https://instabar.eu/)의 디자인과 기능을 클론하여 정적인 kellogg’s 홈페이지에 적용시켜보았습니다. 
-            스크롤 이벤트로 애니메이션을 발생시켜 페이지를 보다 즐겁게 넘길 수 있도록 하여 사이트의 지루함을 해결하였으며
-            해상도에 맞춰 큰 이미지와 굵은 폰트를 사용하여 가독성에 우선을 두었습니다.
+            평소 즐겨 마시는 인스턴트 커피 카누 웹페이지를 디자인하여 코딩하였습니다.
+            기존의 모바일 페이지와 최대한 어우러지게 디자인하였으며
+            동서식품 웹페이지에서 사용하는 드래그 기능을 이용하여 상품들을 볼 수 있도록 작업하였습니다.
         </story>
         <mode>브라우저 구글 크롬
             최적해상도 1920*1080px
-            페이지수 45page
+            페이지수 1page
         </mode>
-        <day> 제작구상 3일
-            디자인 4일
-            코딩 ?주
+        <day> 20.11.28 ~ 20.12.02
+            제작구상 1일
+            디자인 2일
+            코딩 ?일
         </day>
         <web> W3C 웹표준 통과
             WEB AIM(Web Accessibility in Mind) 기준 준수
         </web>
-        <url1>https://hiro961227.github.io/kelloggs/</url1>
+        <url1>https://hiro961227.github.io/kanu/</url1>
         <title1>Index</title1>
-        <url2>https://hiro961227.github.io/kelloggs/about.html</url2>
-        <title2>About Page</title2>
-        <url3>https://hiro961227.github.io/kelloggs/BrandAndProduct=1.html</url3>
-        <title3>BrandAndProduct</title3>
-        <url4>https://hiro961227.github.io/kelloggs/CerealAndNutrition.html</url4>
-        <title4>CerealAndNutrition</title4>
-        <url5>https://hiro961227.github.io/kelloggs/CerealAndNutrition_main.html</url5>
-        <title5>CerealAndNutrition</title5>
         <language1>img/html5.png</language1>
         <language2>img/css3.png</language2>
         <language3>img/js.png</language3>
         <language4>img/jQuery.png</language4>
-        <smalltalk>벤치마킹한 사이트를클론화하여
-        KELLOGG‘S의 홈페이지를 리뉴얼했습니다.  </smalltalk>
-        <logo>img/kelloggslogo.jpg</logo>
+        <smalltalk>모바일 페이지만 존재하는 카누 브랜드의 웹페이지를 
+            기획 및 디자인하였습니다. </smalltalk>
+        <logo>img/kanulogo.jpg</logo>
         <num>03</num>
     </item>
 </items>
