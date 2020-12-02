@@ -17,12 +17,16 @@ function init(){
     // pentagon2();
     // project();
    
-
-    var page = localStorage.pageNum;
-    switch(page){
-        case '0':scorllnext(); break;
-        case '1':header(); about1(); about2(); pentagon1(); pentagon2(); break;
-        case '2':header(); project(); break;
+    //상단 주소에서 페이지명만 추출
+    var page = location.pathname,
+        pageS = page.lastIndexOf('/')+1,
+        pageE = page.lastIndexOf('.'),
+        pageName = page.slice(pageS,pageE);
+        
+    switch(pageName){ 
+        case 'index':scorllnext(); break;
+        case 'aboutme':header(); about1(); about2(); pentagon1(); pentagon2(); break;
+        case 'project':header(); project(); break;
     }
 }
 window.addEventListener('DOMContentLoaded',init);
