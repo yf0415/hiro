@@ -79,7 +79,7 @@ main .leftme .leftmain .leftright .nameetc p { font-family: 'Archivo Narrow', sa
     -webkit-transform: translateX(0%);
             transform: translateX(0%); } }
 
-main .leftme .leftmain .leftright .story { font-family: 'Nanum Gothic', sans-serif; font-size: 1em; line-height: 2; white-space: pre-line; margin-top: -2%; -webkit-animation: pageAni3 1s .4s forwards ease-in-out; animation: pageAni3 1s .4s forwards ease-in-out; opacity: 0; }
+main .leftme .leftmain .leftright .story { word-break: keep-all; font-family: 'Nanum Gothic', sans-serif; font-size: 1em; line-height: 2; white-space: pre-line; margin-top: -2%; -webkit-animation: pageAni3 1s .4s forwards ease-in-out; animation: pageAni3 1s .4s forwards ease-in-out; opacity: 0; }
 
 main .leftme .leftmain .leftright .story span { color: #598488; }
 
@@ -160,6 +160,8 @@ main .rightme p { margin-top: -5%; font-family: 'Nanum Gothic', sans-serif; font
             transform: translateY(0%); } }
 
 main .on { -webkit-filter: grayscale(0%); filter: none; }
+
+footer { height: 3vh; }
 
 @media (min-width: 1101px) and (max-width: 1900px) { main { width: 90%; margin: 0 auto; display: block; }
   main .leftme { width: 50%; margin-top: -2%; }
