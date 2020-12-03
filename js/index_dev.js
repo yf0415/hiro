@@ -27,6 +27,7 @@ function init(){
         case 'index':scorllnext(); break;
         case 'aboutme':header(); about1(); about2(); pentagon1(); pentagon2(); break;
         case 'project':header(); project(); break;
+        default : scorllnext(); break;
     }
 }
-window.addEventListener('DOMContentLoaded',init);
+window.addEventListener('DOMContentLoaded',init); 
