@@ -250,6 +250,43 @@ aside{
     }
 }
 
+@media (min-width:2000px){
+    main{
+        width:100vw;
+        .mainopen{
+            .second{
+                .logo{
+                    img{
+                        width:14vw;
+                        position: absolute;
+                        left:50%; top:60%;
+                        transform: translate(-50%,80%);
+                    }
+                }
+                .mainfont2{
+                    font-size:1.5em;
+                    position: absolute;
+                    left:50%; top:100%;
+                    transform: translate(-50%, 311%);
+                    animation:open7 .5s 3.6s linear forwards;
+                @keyframes open7{
+                    100%{
+                        position: absolute;
+                        left:50%; top:100%;
+                    transform: translate(-50%, 360%);
+                    }
+                }
+                }
+            }
+            .first{
+                font-size:1.5em;
+                position: absolute;
+                left:50%; top:100%;
+                transform: translate(-50%,80%);
+            }
+        }
+    }
+}
 @media (min-width:1101px) and (max-width:1900px){
     main{
         .mainopen{

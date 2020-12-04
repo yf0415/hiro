@@ -259,19 +259,20 @@ aside { opacity: 0; font-size: 0; display: block; text-align: center; border-rad
     -webkit-transform: translate(-50%, -8%);
             transform: translate(-50%, -8%); } }
 
-@media (min-width: 2000px) { main .mainopen .second .logo img { position: absolute; left: 50%; top: 25%; -webkit-transform: translate(-50%, 35%); transform: translate(-50%, 35%); }
-  main .mainopen .second .mainfont2 { position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, 169%); transform: translate(-50%, 169%); -webkit-animation: open7 .5s 3.6s linear forwards; animation: open7 .5s 3.6s linear forwards; }
+@media (min-width: 2000px) { main { width: 100vw; }
+  main .mainopen .second .logo img { width: 14vw; position: absolute; left: 50%; top: 60%; -webkit-transform: translate(-50%, 80%); transform: translate(-50%, 80%); }
+  main .mainopen .second .mainfont2 { font-size: 1.5em; position: absolute; left: 50%; top: 100%; -webkit-transform: translate(-50%, 311%); transform: translate(-50%, 311%); -webkit-animation: open7 .5s 3.6s linear forwards; animation: open7 .5s 3.6s linear forwards; }
   @-webkit-keyframes open7 { 100% { position: absolute;
       left: 50%;
-      top: 50%;
-      -webkit-transform: translate(-50%, 220%);
-              transform: translate(-50%, 220%); } }
+      top: 100%;
+      -webkit-transform: translate(-50%, 360%);
+              transform: translate(-50%, 360%); } }
   @keyframes open7 { 100% { position: absolute;
       left: 50%;
-      top: 50%;
-      -webkit-transform: translate(-50%, 220%);
-              transform: translate(-50%, 220%); } }
-  main .mainopen .first { position: absolute; left: 50%; top: 100%; -webkit-transform: translate(-50%, 120%); transform: translate(-50%, 120%); } }
+      top: 100%;
+      -webkit-transform: translate(-50%, 360%);
+              transform: translate(-50%, 360%); } }
+  main .mainopen .first { font-size: 1.5em; position: absolute; left: 50%; top: 100%; -webkit-transform: translate(-50%, 80%); transform: translate(-50%, 80%); } }
 
 @media (min-width: 1101px) and (max-width: 1900px) { main .mainopen .second .logo img { position: absolute; left: 50%; top: 25%; -webkit-transform: translate(-50%, 35%); transform: translate(-50%, 35%); }
   main .mainopen .second .mainfont2 { position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, 169%); transform: translate(-50%, 169%); -webkit-animation: open7 .5s 3.6s linear forwards; animation: open7 .5s 3.6s linear forwards; }

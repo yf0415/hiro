@@ -500,7 +500,86 @@ main{
     }
 }
 
+@media (min-width:2000px){
+    .active{
+        position: absolute;
+        left:0; top:25%;
+    }
+    main{
+        .titleprject2{
+            width:90vw;
+            h1{
+                padding-top:2%;
+                label{font-size:1.5em;}
+                label:nth-of-type(1){margin-left: 0;}
+            }
+        }
 
+        .backbtn{
+            left:77%; top:6%;
+            span::after{width:30px; height:30px;}
+        }
+        .pagebtn{
+            left:86%; top:16%;
+            button{
+                width:210px; height:70px;
+                font-size:2em;
+            }
+        }
+        .projectlist{
+            li{
+                .listnum{
+                    h5{font-size:2.2em;}
+                }
+                .smalllist{
+                    width:100%;
+                    h2{font-size:3.5em;}
+                    p{font-size:2.1em;}
+                }
+            }
+        }
+    }
+    .projectmain{
+        width:100vw;
+        .openpage{width:100vw; 
+            font-size:2.1em;
+            .page1{
+                width:100vw;
+                .backimg{
+                    .bgimg{
+                        height:45vh;    
+                    }
+                }
+                .stroymain{
+                    width:100vw; height:50vh;
+                    z-index:50;
+                    background-color: #fff;
+                    .etcline{
+                        width:100vw;
+                        background-color: #fff;}
+                }
+            }
+            .page2{
+                .backpage2{height:90vh;
+                    .backimg{
+                    }
+                }
+                .pageupline{
+                    width:100vw;
+                    z-index:30;
+                    background-color: #fff;
+
+                    .sitepage{                    
+                        height:15vh;
+                        .btn{
+                            button{width:300px; height: 80px;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media (min-width:1026px) and (max-width:1560px){
     .active{
         position: absolute;
@@ -535,12 +614,42 @@ main{
             }
         }
     }
-    
     .projectmain{
-        .openpage{
+        width:100vw;
+        .openpage{width:100vw; 
+            background:url('../img/background.jpg');
+
             .page1{
-                .backpage1{
-                    .backimg{}
+                width:100vw;
+                .backimg{
+                    .bgimg{
+                        height:60vh;    
+                    }
+                }
+                .stroymain{
+                    width:100vw; height:50vh;
+                    z-index:50;
+                    background:url('../img/background.jpg');
+                    .etcline{
+                        width:100vw;
+                        background:url('../img/background.jpg');
+                    }
+                }
+            }
+            .page2{
+                .backpage2{height:90vh;
+                    .backimg{
+                        height:40vh;
+                    }
+                }
+                .pageupline{
+                    width:100vw;
+                    z-index:30;
+                    background:url('../img/background.jpg');
+
+                    .sitepage{                    
+                        height:15vh;
+                    }
                 }
             }
         }

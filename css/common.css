@@ -51,10 +51,11 @@ header .menu .mainlogo #gif { opacity: 0; }
 
 header .menu .nowTime { width: 45%; border-top: 1px solid #434a4b; border-bottom: 1px solid #434a4b; padding: 1% 0; margin-top: 3%; font-family: 'Archivo Narrow', sans-serif; text-align: right; padding-right: 1%; font-size: 1.2em; }
 
-@media (min-width: 2500px) and (max-width: 2735px) { .cursor { position: fixed; left: 40%; top: 0%; -webkit-transform: translate(-40%, -50%); transform: translate(-40%, -50%); }
+@media (min-width: 2000px) { .cursor { position: fixed; left: 40%; top: 0%; -webkit-transform: translate(-40%, -50%); transform: translate(-40%, -50%); }
   .hovered { color: #fff !important; }
   .link { -webkit-transform: scale(2) translate(0, 0%); transform: scale(2) translate(0, 0%); background: #598488; color: #fff !important; }
-  .imghover { pointer-events: none; border: 1px solid #598488; background: #598488; color: #fff !important; -webkit-transform: translate(-25%, -30%) scale(1.4); transform: translate(-25%, -30%) scale(1.4); } }
+  .imghover { pointer-events: none; border: 1px solid #598488; background: #598488; color: #fff !important; -webkit-transform: translate(-25%, -30%) scale(1.4); transform: translate(-25%, -30%) scale(1.4); }
+  header { font-size: 2.3em; } }
 
 @media (min-width: 1101px) and (max-width: 1900px) { .cursor { position: fixed; left: 40%; top: 0%; -webkit-transform: translate(-40%, -50%); transform: translate(-40%, -50%); }
   .hovered { color: #fff !important; }
