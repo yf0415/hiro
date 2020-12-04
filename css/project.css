@@ -255,12 +255,12 @@ main .projectlist li .smalllist p { font-size: 1.2em; white-space: pre-line; lin
   main .projectlist li .smalllist h1 { font-size: .9em; }
   main .projectlist li .smalllist p { font-size: 1em; } }
 
-@media (min-width: 1026px) and (max-width: 1560px) { .active { position: absolute; left: 0; top: 36%; }
+@media (min-width: 1026px) and (max-width: 1560px) { .active { position: absolute; left: 0; top: 34%; }
   main { font-size: 1em; }
-  main .backbtn { left: 63.5%; top: -2%; }
+  main .backbtn { left: 63.5%; top: 0%; }
   main .backbtn span { width: 12px; height: 12px; }
-  main .pagebtn { left: 84%; top: 24.5%; }
-  main .pagebtn button { width: 150px; height: 50px; font-size: 1.2em; }
+  main .pagebtn { left: 84%; top: 23%; }
+  main .pagebtn button { width: 150px; height: 50px; font-size: 1.1em; }
   main .titleprject2 h1 { padding-top: 0; margin-top: -2%; }
   main .titleprject2 h1 label { font-size: .8em; }
   main .projectlist { margin-top: -3%; }
