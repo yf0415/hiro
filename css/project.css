@@ -244,7 +244,7 @@ main .projectlist li .smalllist p { font-size: 1.2em; white-space: pre-line; lin
   .projectmain .openpage .page2 .pageupline .sitepage h3 { height: 5vh; }
   .projectmain .openpage .page2 .pageupline .sitepage .btn button { width: 350px; height: 100px; } }
 
-@media (min-width: 1561px) and (max-width: 1900px) { .active { position: absolute; left: 0; top: 32%; }
+@media (min-width: 1562px) and (max-width: 1900px) { .active { position: absolute; left: 0; top: 32%; }
   main .backbtn { left: 63%; top: -2%; }
   main .backbtn span { width: 12px; height: 12px; }
   main .pagebtn { left: 85%; top: 23%; }
