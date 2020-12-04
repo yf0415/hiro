@@ -284,7 +284,8 @@ main .projectlist li .smalllist p { font-size: 1.2em; white-space: pre-line; lin
   .projectmain .openpage .page1 .backimg .bgimg { height: 45vh; }
   .projectmain .openpage .page1 .stroymain { width: 100%; z-index: 50; }
   .projectmain .openpage .page2 .backpage2 { height: 90vh; }
-  .projectmain .openpage .page2 .sitepage { padding: 5% 0; height: 40vh; }
+  .projectmain .openpage .page2 .pageupline { width: 100vw; z-index: 30; padding-top: 8%; background: url("../img/background.jpg"); }
+  .projectmain .openpage .page2 .pageupline .sitepage { height: 15vh; }
   .backdeco { width: 100%; height: 150%; position: absolute; left: 0%; top: 0%; z-index: -50; }
   .backdeco .kelloggsimg1 { width: 200px; position: absolute; left: 80%; top: 80%; -webkit-transform: translate(0%, 0%) rotate(-15deg); transform: translate(0%, 0%) rotate(-15deg); }
   .backdeco .kelloggsimg2 { width: 100px; position: absolute; left: 91%; top: 74%; -webkit-transform: trnaslate(-96%, -74%) rotate(-45deg); transform: trnaslate(-96%, -74%) rotate(-45deg); }
