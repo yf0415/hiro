@@ -239,7 +239,7 @@ main .projectlist li .smalllist p { font-size: 1.2em; white-space: pre-line; lin
   .projectmain .openpage .page1 .stroymain { width: 100vw; height: 50vh; z-index: 50; background: url("../img/background.jpg"); }
   .projectmain .openpage .page1 .stroymain .etcline { width: 100vw; background: url("../img/background.jpg"); }
   .projectmain .openpage .page2 .backpage2 { height: 90vh; }
-  .projectmain .openpage .page2 .pageupline { width: 100vw; z-index: 30; background: url("../img/background.jpg"); }
+  .projectmain .openpage .page2 .pageupline { width: 100vw; z-index: 30; padding-top: 8%; background: url("../img/background.jpg"); }
   .projectmain .openpage .page2 .pageupline .sitepage { height: 15vh; background: url("../img/background.jpg"); }
   .projectmain .openpage .page2 .pageupline .sitepage h3 { height: 5vh; font-size: 2.2em; }
   .projectmain .openpage .page2 .pageupline .sitepage .btn button { width: 350px; height: 100px; } }
