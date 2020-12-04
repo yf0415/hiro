@@ -547,16 +547,17 @@ main{
                 width:100vw;
                 .backimg{
                     .bgimg{
-                        height:45vh;    
+                        height:60vh;    
                     }
                 }
                 .stroymain{
-                    width:100vw; height:50vh;
+                    width:100vw; height:100vh;
                     z-index:50;
-                    background-color: #fff;
+                    background:url('../img/background.jpg');
                     .etcline{
                         width:100vw;
-                        background-color: #fff;}
+                        background:url('../img/background.jpg');
+                    }
                 }
             }
             .page2{
@@ -567,12 +568,17 @@ main{
                 .pageupline{
                     width:100vw;
                     z-index:30;
-                    background-color: #fff;
+                    padding-top:8%;
+                    background:url('../img/background.jpg');
 
                     .sitepage{                    
                         height:15vh;
+                        background:url('../img/background.jpg');
+                        h3{
+                            height: 5vh;
+                        }
                         .btn{
-                            button{width:300px; height: 80px;}
+                            button{width:350px; height: 100px;}
                         }
                     }
                 }
@@ -580,7 +586,7 @@ main{
         }
     }
 }
-@media (min-width:1026px) and (max-width:1560px){
+@media (min-width:1562px) and (max-width:1900px){
     .active{
         position: absolute;
         left:0; top:32%;
@@ -614,8 +620,45 @@ main{
             }
         }
     }
+}
+@media (min-width:1026px) and (max-width:1560px){
+    .active{
+        position: absolute;
+        left:0; top:27%;
+    }
+    main{
+        font-size:1.2em;
+        .backbtn{
+            left:58%; top:-2%;
+            span{width:12px; height:12px;}
+        }
+        .pagebtn{
+            left:80%; top:17%;
+            button{
+                width:150px; height:50px;
+                font-size:1.2em;
+            }
+        }
+        .titleprject2{
+            h1{
+                padding-top:0;
+                margin-top:-2%;
+                label{font-size:.8em;}
+            }
+        }
+        .projectlist{
+            margin-top:-3%;
+            li{
+                .smalllist{
+                    h1{font-size:.9em;}
+                    p{font-size:1em;}
+                }
+            }
+        }
+    }
     .projectmain{
         width:100vw;
+        font-size:1.2em;
         .openpage{width:100vw; 
             background:url('../img/background.jpg');
 
@@ -627,7 +670,7 @@ main{
                     }
                 }
                 .stroymain{
-                    width:100vw; height:50vh;
+                    width:100vw; height:100vh;
                     z-index:50;
                     background:url('../img/background.jpg');
                     .etcline{
@@ -645,6 +688,7 @@ main{
                 .pageupline{
                     width:100vw;
                     z-index:30;
+                    padding-top:8%;
                     background:url('../img/background.jpg');
 
                     .sitepage{                    
@@ -719,13 +763,19 @@ main{
                 }
             }
             .page2{
-                .backpage2{height:90vh;
-                    .backimg{
+                .pageupline{
+                    width:100vw;
+                    z-index:30;
+                    padding-top:16%;
+                    background:url('../img/background.jpg');
+
+                    .sitepage{                    
+                        height:15vh;
+                        background:url('../img/background.jpg');
+                        h3{
+                            height: 5vh;
+                        }
                     }
-                }
-                .sitepage{    
-                    padding:5% 0;                
-                    height:40vh;
                 }
             }
         }
