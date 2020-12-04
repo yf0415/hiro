@@ -283,8 +283,8 @@ main .projectlist li .smalllist p { font-size: 1.2em; white-space: pre-line; lin
   .projectmain .openpage .page1 { width: 100%; }
   .projectmain .openpage .page1 .backimg .bgimg { height: 45vh; }
   .projectmain .openpage .page1 .stroymain { width: 100%; z-index: 50; }
-  .projectmain .openpage .page2 .backpage2 { height: 90vh; }
-  .projectmain .openpage .page2 .pageupline { width: 100vw; z-index: 30; padding-top: 8%; background: url("../img/background.jpg"); }
+  .projectmain .openpage .page2 .backpage2 { height: 45vh; }
+  .projectmain .openpage .page2 .pageupline { width: 100vw; z-index: 30; padding-top: 16%; background: url("../img/background.jpg"); }
   .projectmain .openpage .page2 .pageupline .sitepage { height: 15vh; background: url("../img/background.jpg"); }
   .projectmain .openpage .page2 .pageupline .sitepage h3 { height: 5vh; }
   .backdeco { width: 100%; height: 150%; position: absolute; left: 0%; top: 0%; z-index: -50; }
