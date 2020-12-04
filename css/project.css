@@ -244,6 +244,17 @@ main .projectlist li .smalllist p { font-size: 1.2em; white-space: pre-line; lin
   .projectmain .openpage .page2 .pageupline .sitepage h3 { height: 5vh; }
   .projectmain .openpage .page2 .pageupline .sitepage .btn button { width: 350px; height: 100px; } }
 
+@media (min-width: 1560px) and (max-width: 1900px) { .active { position: absolute; left: 0; top: 32%; }
+  main .backbtn { left: 63%; top: -2%; }
+  main .backbtn span { width: 12px; height: 12px; }
+  main .pagebtn { left: 85%; top: 23%; }
+  main .pagebtn button { width: 120px; height: 40px; font-size: .9em; }
+  main .titleprject2 h1 { padding-top: 0; margin-top: -2%; }
+  main .titleprject2 h1 label { font-size: .8em; }
+  main .projectlist { margin-top: -3%; }
+  main .projectlist li .smalllist h1 { font-size: .9em; }
+  main .projectlist li .smalllist p { font-size: 1em; } }
+
 @media (min-width: 1026px) and (max-width: 1560px) { .active { position: absolute; left: 0; top: 27%; }
   main { font-size: 1.2em; }
   main .backbtn { left: 58%; top: -2%; }
