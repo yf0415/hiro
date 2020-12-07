@@ -21,13 +21,13 @@ ul, li { list-style: none; }
 
 a { text-decoration: none; }
 
-.cursor { display: inline-block; width: 3rem; height: 3rem; border: 2px solid #598488; border-radius: 50%; position: fixed; left: 0%; top: 0%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 1000; pointer-events: none; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; -webkit-transition-property: background, -webkit-transform; transition-property: background, -webkit-transform; transition-property: background, transform; transition-property: background, transform, -webkit-transform; -webkit-transform-origin: 100% 100%; transform-origin: 100% 100%; -webkit-backdrop-filter: sepia(10%); backdrop-filter: sepia(10%); background-size: cover; }
+.cursor { display: inline-block; width: 3rem; height: 3rem; border: 2px solid #598488; border-radius: 50%; position: fixed; left: 0%; top: 0%; -webkit-transform: translate(-50%, -110%); transform: translate(-50%, -110%); z-index: 1000; pointer-events: none; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; -webkit-transition-property: background, -webkit-transform; transition-property: background, -webkit-transform; transition-property: background, transform; transition-property: background, transform, -webkit-transform; -webkit-transform-origin: 100% 100%; transform-origin: 100% 100%; -webkit-backdrop-filter: sepia(10%); backdrop-filter: sepia(10%); background-size: cover; }
 
-.imghover { pointer-events: none; border: 1px solid #598488; background: #598488; color: #fff !important; -webkit-transform: translate(-25%, -25%) scale(1.4); transform: translate(-25%, -25%) scale(1.4); }
+.imghover { pointer-events: none; border: 1px solid #598488; background: #598488; color: #fff !important; -webkit-transform: translate(-25%, -50%) scale(1.4); transform: translate(-25%, -50%) scale(1.4); }
 
 .hovered { color: #fff !important; }
 
-.link { -webkit-transform: scale(2); transform: scale(2); background: #598488; color: #fff !important; }
+.link { -webkit-transform: translate(-25%, -50%) scale(2); transform: translate(-25%, -50%) scale(2); background: #598488; color: #fff !important; }
 
 header { width: 90%; display: block; margin: 0 auto; }
 
