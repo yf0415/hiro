@@ -27,7 +27,7 @@ a { text-decoration: none; }
 
 .hovered { color: #fff !important; }
 
-.link { -webkit-transform: translate(-30%, -50%) scale(2); transform: translate(-30%, -50%) scale(2); background: #598488; color: #fff !important; }
+.link { -webkit-transform: translate(-30%, -55%) scale(2); transform: translate(-30%, -55%) scale(2); background: #598488; color: #fff !important; }
 
 header { width: 90%; display: block; margin: 0 auto; }
 
